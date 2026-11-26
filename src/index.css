@@ -13,6 +13,35 @@
 
 * {
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #2f3647 transparent;
+}
+
+/* Premium Dark-Theme Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c3242;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #414a61;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 body {
@@ -170,6 +199,30 @@ body {
 
 .btn-secondary:hover:not(:disabled) {
   background: #2a3040;
+}
+
+.btn-ghost-accent {
+  background: transparent;
+  color: #a5b4fc;
+  border-color: rgba(129, 140, 248, 0.28);
+}
+
+.btn-ghost-accent:hover:not(:disabled) {
+  background: rgba(129, 140, 248, 0.12);
+  border-color: rgba(129, 140, 248, 0.5);
+  color: #c7d2fe;
+}
+
+.btn-save-png {
+  background: rgba(16, 185, 129, 0.14);
+  color: #6ee7b7;
+  border-color: rgba(16, 185, 129, 0.38);
+}
+
+.btn-save-png:hover:not(:disabled) {
+  background: rgba(16, 185, 129, 0.24);
+  border-color: rgba(16, 185, 129, 0.65);
+  color: #a7f3d0;
 }
 
 .btn-danger-outline {

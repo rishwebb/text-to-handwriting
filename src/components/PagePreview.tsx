@@ -67,14 +67,14 @@ export const PagePreview: React.FC<PagePreviewProps> = ({
 
         <div className="preview-actions">
           <button
-            className="btn btn-secondary btn-sm"
+            className="btn btn-ghost-accent btn-sm"
             onClick={onRerollSeed}
             title="Randomize handwriting variation"
           >
             <Dices size={15} /> Re-roll Ink
           </button>
           <button
-            className="btn btn-primary btn-sm"
+            className="btn btn-save-png btn-sm"
             onClick={onDownloadCurrent}
           >
             <Download size={15} /> Save Page PNG
